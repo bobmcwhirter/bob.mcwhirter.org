@@ -1,0 +1,26 @@
+/* 960 Grid System ~ Text CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+
+@import "960/text";
+
+@include text;
+
+#header {
+  font-size: 240%;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#footer {
+  color: #999;
+  border-top: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: #922;
+}
+
+

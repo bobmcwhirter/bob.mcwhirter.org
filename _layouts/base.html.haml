@@ -1,0 +1,35 @@
+%html
+  %head
+    %title
+      bob.mcwhirter.org: #{page.title}
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/grid.css', :media=>'screen, projection' }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/text.css', :media=>'screen, print' }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/site.css', :media=>'screen, print' }
+  %body.ninesixty
+    #container
+      #header
+        %a{:href=>site.base_url}
+          bob.mcwhirter.org
+      #content_container
+        #content
+          ~ content
+      #sidebar_container
+        #sidebar
+          %h2 Contact
+          %ul
+            %li
+              %a{:href=>'http://twitter.com/bobmcwhirter'}
+                @bobmcwhirter on Twitter
+          %h2 Projects
+          %ul
+            %li
+              %a{:href=>'http://torquebox.org/'}
+                TorqueBox: Ruby App-server
+            %li
+              %a{:href=>'http://jboss.org/stormgrind'}
+                Stormgrind: JBoss cloud-related projects
+            %li
+              %a{:href=>'http://awestruct.org/'}
+                Awestruct: Dynamically static site-baking tool
+      #footer
+        Copyright 2010 Bob McWhirter. Licensed under CC-BY-SA.
