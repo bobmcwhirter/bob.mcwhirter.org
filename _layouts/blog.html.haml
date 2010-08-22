@@ -5,5 +5,11 @@ layout: base
 .blog_entry
   %h2
     = page.title
+  %h3
+    = page.date.strftime( '%d %B %Y' )
+  %h4
+    - for tag in page.tags
+      %a
+        = tag
   .content
     ~page.content

@@ -1,0 +1,200 @@
+#!/usr/bin/env ruby
+
+
+#require 'rexml/document'
+require 'date'
+require 'fileutils'
+require 'net/http'
+require 'uri'
+require 'cgi'
+require 'iconv'
+
+require 'rubygems'
+require 'nokogiri'
+
+class Importer
+
+  def initialize(import_file, output_dir)
+    @import_file = import_file
+    @output_dir  = output_dir
+  end
+
+  def import_file
+    #doc = REXML::Document.new( File.read( @import_file ) )
+    file_content = File.read( @import_file )
+    doc = Nokogiri::XML::Document.parse( File.read( @import_file ), 'utf-8' )
+    root = doc.root
+    #root.get_elements( 'channel/item' ).each do |item|
+    root.xpath( './channel/item' ).each do |item|
+      import_item( item )
+    end
+  end
+
+  private
+
+  def import_item(item_xml)
+    type = item_xml.xpath( './wp:post_type//text()' ).to_s
+    return if type != 'post'
+
+    status = item_xml.xpath( './wp:status//text()' ).to_s
+    return if status != 'publish'
+
+    title    = item_xml.xpath( 'title/text()' ).to_s
+    author   = 'Bob McWhirter'
+    link     = item_xml.xpath( 'link/text()' ).to_s
+    if ( link =~ %r(/([^/]+)/$) )
+      slug = $1
+    end
+    published = DateTime.parse( item_xml.xpath( 'pubDate/text()' ).to_s )
+    output_path = File.join( @output_dir, published.strftime( "%Y-%m-%d-#{slug}.md" ) )
+    puts "importing #{output_path}"
+    content  = item_xml.xpath( 'content:encoded' ).text.to_s.strip
+    begin
+      content = Iconv.conv( 'iso-8859-1', 'utf8', content )
+      begin
+        content = Iconv.conv( 'iso-8859-1', 'utf8', content )
+      rescue =>e
+      end
+    rescue =>e 
+      # skip iconv
+    end
+    #content.gsub!(/&/, '&amp; ')
+    content.gsub!(/\r/, "\n")
+    content.gsub!(/\xa0/, ' ' )
+=begin
+    in_pre = false
+    p_content = ''
+    content.each_line do |line|
+      if ( line =~ /<pre>/ )
+        in_pre = true
+      end
+      if ( line =~ /<\/pre>/ )
+        in_pre = false
+      end
+      if ( in_pre || ( line =~ /^\s*</ ) )
+        p_content << line
+      elsif ( line.strip == '' )
+        # nothing
+      else
+        p_content << "<p>\n#{line}</p>\n" 
+      end
+    end
+    content = p_content
+=end
+
+    content = content.gsub( /\n\n\n+/, "\n\n" )
+
+    #content = import_images( content )
+    #content = import_assets( content )
+
+    tags = item_xml.xpath( "category[@domain='tag' and @nicename]/@nicename" ).collect{|e|e.to_s}
+
+    #if ( ! File.exist?( output_path ) )
+      puts "writing post: #{output_path}"
+      FileUtils.mkdir_p( File.dirname( output_path ) )
+      File.open( output_path, 'w' ) do |f|
+        #f.puts "date: #{published.year}-#{published.month}-#{published.day}"
+        f.puts '---'
+        f.puts "title: \"#{title}\""
+        f.puts "author: 'Bob McWhirter'"
+        f.puts "layout: blog"
+        f.puts "tags: [ #{tags.join(', ')} ]"
+        f.puts '---'
+        f.puts content
+      end
+    #end
+  end
+
+  def import_images(content)
+    #doc = REXML::Document.new( '<entry>' + CGI.escapeHTML( content ) + '</entry>' )
+    begin
+      doc = REXML::Document.new( '<entry>' + content  + '</entry>' )
+      
+    rescue =>e 
+      puts e.message
+      puts "<entry>"
+      puts content
+      puts "</entry>"
+      exit
+    end
+    REXML::XPath.each( doc, '//img' ) do |img|
+      src = img.attributes['src']
+      if ( src =~ /^\// )
+        src = "http://bob.mcwhirter.org#{src}"
+      end
+      
+      basename = File.basename( src )
+      output_path = "blog/assets/#{basename}"
+ 
+      if ( ! File.exists?( output_path ) ) 
+        url = URI.parse( src )
+  
+        res = Net::HTTP.start(url.host, url.port) {|http|
+          http.get(url.path)
+        }
+  
+        FileUtils.mkdir_p( File.dirname( output_path ) )
+        puts "writing image: #{output_path}"
+        File.open( output_path, 'wb' ) do |f|
+          f.write res.body
+        end
+      end
+
+      img.attributes['src'] = "/#{output_path}"
+    end
+    content = ''
+    doc.root.children.each do |c|
+      content += c.to_s
+    end
+    content
+  end
+
+
+  def import_assets(content)
+    doc = REXML::Document.new( '<entry>' + content + '</entry>' )
+    REXML::XPath.each( doc, '//a' ) do |a|
+      href = a.attributes['href']
+      if ( href =~ /^\// )
+        href = "http://oddthesis.org#{href}"
+      end
+      if ( href =~ /\.(pdf)$/ )
+        basename = File.basename( href )
+        output_path = "blog/assets/#{basename}"
+  
+        url = URI.parse( href )
+  
+        if ( ! File.exist?( output_path ) )
+          puts "fetching: #{url}"
+          FileUtils.mkdir_p( File.dirname( output_path ) )
+          File.open( output_path, 'wb' ) do |f|
+            Net::HTTP.start(url.host, url.port) do |http|
+              http.get(url.path) do |str|
+                f.write str
+                $stderr.putc '.'
+                $stderr.flush
+              end
+            end
+          end
+          puts "writing asset: #{output_path}"
+        end
+  
+        a.attributes['href'] = "/#{output_path}"
+      end
+
+    end
+    content = ''
+    doc.root.children.each do |c|
+      content += c.to_s
+    end
+    content
+
+  end
+
+
+end
+
+if ( $0 == __FILE__ ) 
+  importer = Importer.new( ARGV[0], ARGV[1] )
+  importer.import_file
+end
+
