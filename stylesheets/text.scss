@@ -7,15 +7,23 @@
 
 @include text;
 
+body {
+  font-family: small Verdana,Geneva,sans-serif;
+}
+
 #header {
+  margin-top: 1ex;
   font-size: 240%;
   font-weight: bold;
   border-bottom: 1px solid black;
+  font-family: courier;
 }
 
 #footer {
   color: #999;
   border-top: 1px solid black;
+  padding-top: .5ex;
+  font-size: 80%;
 }
 
 a {
@@ -58,9 +66,8 @@ pre {
     padding: 0px;
   }
   h3 {
-    font-size: 140%;
+    font-size: 120%;
     font-weight: bold;
-    margin-bottom: 1ex;
     margin: 0px;
     padding: 0px;
   }
@@ -68,9 +75,17 @@ pre {
     font-size: 90%;
     font-weight: bold;
   }
+  .content {
+    font-size: 110%;
+    p {
+      margin-bottom: 1.2em;
+      line-height: 1.7em;
+    }
+  }
 }
 
 .pagination-links {
+  font-size: 90%;
   margin-top: 1em;
   margin-bottom: 1em;
   .page-link, a, .current-page, span {
@@ -86,6 +101,5 @@ pre {
   }
   .previous-link, .next-link {
     font-weight: bold;
-    border: none;
   }
 }

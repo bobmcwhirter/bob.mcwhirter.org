@@ -37,9 +37,10 @@ body.ninesixty #container {
     @include grid(24);
   }
   #content_container {
-    @include grid(16);
+    @include grid(14);
   }
   #sidebar_container {
+    @include grid-prefix(2);
     @include grid(8);
   }
   #footer {
