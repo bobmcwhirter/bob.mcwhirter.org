@@ -3,8 +3,6 @@ layout: base
 title: Blog
 ---
 
-= page.posts.links
-
 - for post in page.posts
   .post
     %h2
@@ -19,5 +17,7 @@ title: Blog
             = tag
     .content
       ~post.content
+    .comments
+      = intense_debate_comments_link( post.url, post.url )
 
 = page.posts.links

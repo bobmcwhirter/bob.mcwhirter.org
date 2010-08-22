@@ -46,7 +46,7 @@ module Awestruct
 
         ordered_tags = @tags.values
         ordered_tags.sort!{|l,r| -(l.pages.size <=> r.pages.size)}
-        ordered_tags = ordered_tags[0,100]
+        #ordered_tags = ordered_tags[0,100]
         ordered_tags.sort!{|l,r| l.to_s <=> r.to_s}
 
         min = 9999
@@ -66,17 +66,13 @@ module Awestruct
           tag.group = ( tag.pages.size - min ) / slice
         end
 
-        page = HamlFile.new( site, File.join( File.dirname(__FILE__), 'tags.html.haml' ), 'tags' )
         @tags.values.each do |tag|
           paginator = Awestruct::Extensions::Paginator.new( @tagged_items_property, @input_path, { :remove_input=>false, :output_prefix=>File.join( @output_path, tag.to_s), :collection=>tag.pages }.merge( @pagination_opts ) )
           primary_page = paginator.execute( site )
           tag.primary_page = primary_page
         end
 
-        #page = HamlFile.new( site, File.join( File.dirname(__FILE__), 'tags.html.haml' ), 'tags' )
-        #page.layout = @layout
-        #page.tags = ordered_tags
-        #site.pages << page
+        site.send( "#{@tagged_items_property}_tags=", ordered_tags )
       end
     end
   end
