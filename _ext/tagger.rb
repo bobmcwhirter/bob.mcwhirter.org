@@ -6,6 +6,7 @@ module Awestruct
       class TagStat
         attr_accessor :pages
         attr_accessor :group
+        attr_accessor :primary_page
         def initialize(tag, pages)
           @tag   = tag
           @pages = pages
@@ -16,22 +17,31 @@ module Awestruct
         end
       end
 
-      def initialize(layout, output_path='tags')
-        @layout = layout.to_s
+      def initialize(tagged_items_property, input_path, output_path='tags', pagination_opts={})
+        @tagged_items_property = tagged_items_property
+        @input_path  = input_path
         @output_path = output_path
+        @pagination_opts = pagination_opts
       end
 
       def execute(site)
         @tags ||= {}
-        site.pages.each do |page|
+        all = site.send( @tagged_items_property )
+        return if ( all.nil? || all.empty? ) 
+
+        all.each do |page|
           tags = page.tags
-          if ( tags )
+          if ( tags && ! tags.empty? )
             tags.each do |tag|
               tag = tag.to_s
               @tags[tag] ||= TagStat.new( tag, [] )
               @tags[tag].pages << page
             end
           end
+        end
+
+        all.each do |page|
+          page.tags = page.tags.collect{|t| @tags[t]}
         end
 
         ordered_tags = @tags.values
@@ -57,9 +67,16 @@ module Awestruct
         end
 
         page = HamlFile.new( site, File.join( File.dirname(__FILE__), 'tags.html.haml' ), 'tags' )
-        page.layout = @layout
-        page.tags = ordered_tags
-        site.pages << page
+        @tags.values.each do |tag|
+          paginator = Awestruct::Extensions::Paginator.new( @tagged_items_property, @input_path, { :remove_input=>false, :output_prefix=>File.join( @output_path, tag.to_s), :collection=>tag.pages }.merge( @pagination_opts ) )
+          primary_page = paginator.execute( site )
+          tag.primary_page = primary_page
+        end
+
+        #page = HamlFile.new( site, File.join( File.dirname(__FILE__), 'tags.html.haml' ), 'tags' )
+        #page.layout = @layout
+        #page.tags = ordered_tags
+        #site.pages << page
       end
     end
   end

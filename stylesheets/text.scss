@@ -46,3 +46,46 @@ pre {
 .tag_5 {
   font-size: 300%;
 }
+
+.post {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #888;
+  h2 {
+    font-size: 170%;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 {
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: 1ex;
+    margin: 0px;
+    padding: 0px;
+  }
+  h4 {
+    font-size: 90%;
+    font-weight: bold;
+  }
+}
+
+.pagination-links {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .page-link, a, .current-page, span {
+    padding: .6ex;
+  }
+  .page-link, a, .current-page {
+    border: 1px solid #888;
+  }
+  .current-page {
+    border: 1px solid #555;
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  .previous-link, .next-link {
+    font-weight: bold;
+    border: none;
+  }
+}

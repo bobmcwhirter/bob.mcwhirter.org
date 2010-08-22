@@ -2,14 +2,15 @@
 layout: base
 ---
 
-.blog_entry
+.post
   %h2
     = page.title
   %h3
     = page.date.strftime( '%d %B %Y' )
   %h4
     - for tag in page.tags
-      %a
-        = tag
+      - unless tag.nil?
+        %a{:href=>tag.primary_page.url}
+          = tag
   .content
     ~page.content
