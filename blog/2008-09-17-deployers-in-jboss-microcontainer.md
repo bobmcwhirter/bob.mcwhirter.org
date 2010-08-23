@@ -44,7 +44,7 @@ Of course, Ales or Adrian may tell me I'm completely wrong.  That's always a pos
 
 Here's a picture for you, though.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/war-deployment.png">
+<a href="/blog/assets/war-deployment-292x300.png">
   <img class="aligncenter size-medium wp-image-474" title="war-deployment" src="/blog/assets/war-deployment-292x300.png" alt="" width="292" height="300"/>
 </a>
 

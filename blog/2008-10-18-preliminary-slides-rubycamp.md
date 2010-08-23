@@ -4,7 +4,7 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ java, jboss, ruby, rubycamp, slides ]
 ---
-Thanks to the typical <a title="Damn you, Amazon" href="http://www.fnokd.com/2008/10/17/run-level-run/">demo demons</a>, I've been unable to get everything functioning perfect for instantaneous clustering on EC2 by tomorrow.
+Thanks to the typical <a title="Damn you, Amazon" href="/blog/run-level-run">demo demons</a>, I've been unable to get everything functioning perfect for instantaneous clustering on EC2 by tomorrow.
 
 Oh well.
 

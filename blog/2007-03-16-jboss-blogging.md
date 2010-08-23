@@ -5,7 +5,7 @@ layout: blog
 tags: [ blogging, community, jboss ]
 ---
 <div align="left">James Governor of RedMonk had a <a title="James Governor's comment" href="http://www.redmonk.com/jgovernor/2007/03/13/links-for-2007-03-13/">less-than-flattering comment</a> about how JBoss blogs.</div>
-<div align="left"><a title="boring_blog.png" class="imagelink" href="http://www.fnokd.com/wp-content/uploads/2007/03/boring_blog.png"/>
+<div align="left"><a title="boring_blog.png" class="imagelink" href="/blog/assets/boring_blog.png"/>
 <div align="left"><a title="James Governor's comment" href="http://www.redmonk.com/jgovernor/2007/03/13/links-for-2007-03-13/"><img width="444" height="111" id="image207" alt="boring_blog.png" src="/blog/assets/boring_blog.png"/></a></div>
 I think part of the problem is that a lot of interesting JBoss blogging occurs at places other than <a title="blogs.jboss.com" href="http://blogs.jboss.com/blog/default">blogs.jboss.com</a>.  Basically, you simply have to look further than blogs.jboss.com.
 

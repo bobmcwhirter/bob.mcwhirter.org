@@ -6,9 +6,9 @@ tags: [ ec2, java, jboss, puppet, thincrust, virtualization ]
 ---
 It can sometimes be funny, the paths we take.
 
-Once I'd verified that a Rails app deployed on JBoss <a title="Clustering Rails on JBoss" href="http://www.fnokd.com/2008/09/29/jbor-will-it-cluster/">would indeed cluster</a>, I sat in my farmhouse, looking at my lone little Mac.  Not much of a cluster to play with.
+Once I'd verified that a Rails app deployed on JBoss <a title="Clustering Rails on JBoss" href="/blog/jbor-will-it-cluster">would indeed cluster</a>, I sat in my farmhouse, looking at my lone little Mac.  Not much of a cluster to play with.
 
-So I started looking at <a title="Amazon EC2" href="http://aws.amazon.com/ec2/">Amazon EC2</a>, which is truly very nice, particularly when paired with <a title="Elasticfox happiness" href="http://www.fnokd.com/2008/10/01/elasticfox-osx-and-iterm/">Elasticfox</a>.
+So I started looking at <a title="Amazon EC2" href="http://aws.amazon.com/ec2/">Amazon EC2</a>, which is truly very nice, particularly when paired with <a title="Elasticfox happiness" href="/blog/elasticfox-osx-and-iterm">Elasticfox</a>.
 
 Of course, firing up a cluster on EC2 requires a nicely-produced, ready-to-boot machine image or a lot of manual configuration on each node.
 

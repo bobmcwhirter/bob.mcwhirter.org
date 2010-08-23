@@ -10,19 +10,19 @@ With the winds behind us, we managed to make it to Schiphol airport in a record 
 
 Met up with James Cobb, the kick-ass .org brand-manager/designer at the airport.  We managed to keep each other walking around and awake all day to stave off horrible jet lag.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2007/12/james.jpg">
+<a href="/blog/assets/james.jpg">
   <img src="/blog/assets/james.jpg" height="180" width="210"/>
 </a>
 
 The wife and I stayed a night in Amsterdam before taking the train to the lovely Centraal Station area of Antwerp.  If you're looking for the ambiance of a Motel 6 with the convenience and bouquet of being beside the Greyhound Station, this is the place for you!
 
-<a href="http://www.fnokd.com/wp-content/uploads/2007/12/ams.jpg">
+<a href="/blog/assets/ams.jpg">
   <img src="/blog/assets/ams.jpg" height="281" width="190"/>
 </a>
 
 Once in Antwerp, we hooked back up with James, and met, for the first time, the Fabulous Five from Poland: Przemek, Ryseik, Adam, Tomek and Pawel (left to right).  Mark Newton was present for a few days, but had to return to Switzerland early, unfortunately.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2007/12/team.JPG">
+<a href="/blog/assets/team.JPG">
   <img src="/blog/assets/team.JPG" height="244" width="325"/>
 </a>
 
@@ -32,7 +32,7 @@ The Polish developers attended a lot of the conference talks, and we as a team h
 
 Somewhere along the way, the guys goaded me into doing the Java Black Belt competition at the Cap-Gemini booth.  I managed to make it to the finals, and ultimately won a PlayStation 3. Unfortunately, it was a PAL-based Region-2 PS3, which is decidedly incompatible with my Region-1 NTSC lifestyle choices.  It's now living in Poland, along with a Nintendo Wii that Adam won.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2007/12/ps3.JPG">
+<a href="/blog/assets/ps3.JPG">
   <img src="/blog/assets/ps3.JPG" height="222" width="295"/>
 </a>
 

@@ -4,13 +4,13 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ java, jboss, rails, thincrust, virtualization, vmware ]
 ---
-On my path towards clustering a Rails app on JBoss on EC2, I <a title="Stumbling into the Thincrusties" href="http://www.fnokd.com/2008/10/11/stumbling-through-technology/">stumbled across</a> Bryan Kearney and the other <a title="Thincrust" href="http://thincrust.net/">Thincrust</a> guys. With their help, I now have a JBoss AS5 + jboss-rails "appliance" ready to roll.
+On my path towards clustering a Rails app on JBoss on EC2, I <a title="Stumbling into the Thincrusties" href="/blog/stumbling-through-technology">stumbled across</a> Bryan Kearney and the other <a title="Thincrust" href="http://thincrust.net/">Thincrust</a> guys. With their help, I now have a JBoss AS5 + jboss-rails "appliance" ready to roll.
 
 Grab the <a title="Raw image" href="http://fnokd.com/~bob/jboxx/jboxx5-0.1-preview-1-raw.tar.gz">raw image</a> or the <a title="JBoxx VMWare image" href="http://fnokd.com/~bob/jboxx/jboxx5-0.1-preview-1-vmware.tar.gz">VMWare image</a>, and play along at home.
 
 Fire up the image in your favorite virtualization environment. I give my virtual machine at least a gig of RAM. Marvel at the pretty Grub splash screen, courtesy of <a title="James Cobb" href="http://www.insectengine.com/wordpress/">James Cobb</a> (JBoss.org designer).
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/10/picture-6.png">
+<a href="/blog/assets/picture-6.png">
   <img class="aligncenter size-full wp-image-551" title="Grub" src="/blog/assets/picture-6.png" alt="" width="456" height="339"/>
 </a>
 

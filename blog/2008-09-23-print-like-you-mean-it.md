@@ -17,6 +17,6 @@ It'll spew out your code in landscape mode, syntax-highlighted, two columns of 9
 
 Many times, this allows you to fit an entire class on a single sheet without any gratuitous wrapping due to Eclipse's 24pt font usage.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/picture-25.png">
+<a href="/blog/assets/picture-25.png">
   <img class="aligncenter size-full wp-image-507" title="picture-25" src="/blog/assets/picture-25.png" alt="" width="431" height="185"/>
 </a>

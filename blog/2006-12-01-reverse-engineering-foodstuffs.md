@@ -22,6 +22,6 @@ Now, you might think you're done, given what GORP supposedly stands for.
 
 <strong>You're not.</strong>
 
-After close analysis, I determined that the secret ingredient in a good trail-mix <a href="http://www.fnokd.com/2006/03/18/choose-fun/">is actually M's</a>.  Add some.  Add some more.  Shake the bag.
+After close analysis, I determined that the secret ingredient in a good trail-mix <a href="/blog/choose-fun">is actually M's</a>.  Add some.  Add some more.  Shake the bag.
 
 Now, perhaps you are done.  Unless you're in California, in which case I think you're legally obligated to add some dried pineapple and dates.

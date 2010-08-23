@@ -4,7 +4,7 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ java, jboss, jbossorg, jbossworld ]
 ---
-As <a href="http://www.fnokd.com/2007/10/05/jboss-world-roundtable-and-hackathon/" title="Hackathon!">mentioned previously</a>, at the <a href="http://jbossworld.com/" title="JBoss World 2008">JBoss World 2008</a> conference in Orlando, we'll be running a Hackathon.
+As <a href="/blog/jboss-world-roundtable-and-hackathon" title="Hackathon!">mentioned previously</a>, at the <a href="http://jbossworld.com/" title="JBoss World 2008">JBoss World 2008</a> conference in Orlando, we'll be running a Hackathon.
 
 <a href="http://2249.atlassian.com/display/HACK/Home" title="Hackathon wiki!">
   <img src="/blog/assets/spotlight_jbw_hackathon2.jpg"/>

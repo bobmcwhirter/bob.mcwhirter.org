@@ -6,7 +6,7 @@ tags: [ community, opensource ]
 ---
 Henri Yanell <a title="Henri speaks" href="http://www.fnokd.com/2007/02/16/community-event-horizons/#comment-10533">made some comments</a> on my previous post.  I interpreted them to mean something like the following:
 
-<a class="imagelink" title="mega.png" href="http://www.fnokd.com/wp-content/uploads/2007/02/mega.png">
+<a class="imagelink" title="mega.png" href="/blog/assets/mega.png">
   <img id="image174" alt="mega.png" src="/blog/assets/mega.png"/>
 </a>
 

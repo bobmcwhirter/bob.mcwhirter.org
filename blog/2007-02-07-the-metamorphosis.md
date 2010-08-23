@@ -22,7 +22,7 @@ I join a talented team who already have a lot of cool things underway:
 	<li>Prezemek Dej</li>
 	<li><a title="Pawel" href="http://labs.jboss.com/portal/community#PawelWrzeszcz">Pawel Wrzeszcz</a></li>
 </ul>
-(You may now notice that my <a title="Learning Polish" href="http://www.fnokd.com/2007/01/20/learn-a-new-spoken-language/">decision to learn Polish</a> wasn't quite as arbitrary as it may have initially seemed.)
+(You may now notice that my <a title="Learning Polish" href="/blog/learn-a-new-spoken-language">decision to learn Polish</a> wasn't quite as arbitrary as it may have initially seemed.)
 
 JBoss is of course one of the pioneers of the professional open-source model.  In that, we can never forget our open-source community roots, even when vast sums of money are thrown around.  Ultimately all open-source survives and grows based upon goodwill.  Tending to the community is required, else you risk alienating your own users.  I aim to use my experiences from a variety of open-source projects and communities to make sure the JBoss community is one of which I'm proud to be a member.
 

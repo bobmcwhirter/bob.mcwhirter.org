@@ -16,6 +16,7 @@ class Importer
   def initialize(import_file, output_dir)
     @import_file = import_file
     @output_dir  = output_dir
+    @crosslinks  = {}
   end
 
   def import_file
@@ -44,9 +45,10 @@ class Importer
     if ( link =~ %r(/([^/]+)/$) )
       slug = $1
     end
+    @crosslinks[ link.to_s ] = "/blog/#{slug}"
     published = DateTime.parse( item_xml.xpath( 'pubDate/text()' ).to_s )
     output_path = File.join( @output_dir, published.strftime( "%Y-%m-%d-#{slug}.md" ) )
-    $stderr.puts "importing #{output_path}"
+    $stderr.puts "importing #{output_path} #{link} -> #{@crosslinks[link]}"
     content  = item_xml.xpath( 'content:encoded' ).text.to_s.strip
     begin
       content = Iconv.conv( 'iso-8859-1', 'utf8', content )
@@ -63,6 +65,7 @@ class Importer
 
     content = content.gsub( /\n\n\n+/, "\n\n" )
 
+    content = fixup_crosslinks( content )
     content = import_images( content )
     content = import_assets( content )
 
@@ -83,6 +86,17 @@ class Importer
       end
     #end
   end
+ 
+  def fixup_crosslinks(content)
+    doc = Nokogiri::XML::DocumentFragment.parse( content )
+    doc.xpath( './/a' ).each do |a|
+      replacement_href = @crosslinks[a['href'].to_s]
+      if ( replacement_href )
+        a['href'] = replacement_href
+      end
+    end
+    doc.to_s
+  end
 
   def import_images(content)
     doc = Nokogiri::XML::DocumentFragment.parse( content )
@@ -92,7 +106,7 @@ class Importer
       if ( src =~ /^\// )
         src = "http://bob.mcwhirter.org#{src}"
       end
-      
+
       basename = File.basename( src )
       output_path = "blog/assets/#{basename}"
  
@@ -111,6 +125,16 @@ class Importer
       end
 
       img['src'] = "/#{output_path}"
+      $stderr.puts "seeking [#{src}]"
+      doc.xpath( ".//a" ).each do |a|
+        $stderr.puts "check for #{a['href']}"
+        href = a['href']
+        href = File.join( File.dirname( href ), File.basename( href, File.extname( href ) ) )
+        if ( src =~ /^#{href}/ )
+          $stderr.puts "replace for #{a['href']}"
+          a['href']="/#{output_path}"
+        end
+      end
     end
     doc.to_s
   end

@@ -4,7 +4,7 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ codehaus, disaster, java, technology, web-20 ]
 ---
-<a title="Picture 6.png" class="imagelink" href="http://www.fnokd.com/wp-content/uploads/2006/05/Picture%206.png">
+<a title="Picture 6.png" class="imagelink" href="/blog/assets/Picture%206.png">
   <img width="222" height="97" align="left" alt="Picture 6.png" id="image46" title="Picture 6.png" src="/blog/assets/Picture%206.png"/>
 </a><span class="imagelink">Through the kick-ass efforts of Ben Walding (pictured left with his, um, jaffles iron...) and major assists by <a title="Contegix" href="http://www.contegix.com/">Contegix</a>, sanity has started to return to the haus.  All repositories are capable of being open for business, pending the project despots decision.  So, if CVS/Subversion is missing, go bug the project lead.</span>
 

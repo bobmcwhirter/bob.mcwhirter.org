@@ -8,17 +8,17 @@ Today, I took the wife on a lunch date to the newly opened restaurant <strong>Ni
 
 The atmosphere was excellent, mellow with some reggae music.  We got an excellent seat by the window.  "Nine Mile" is a tribute to Bob Marley, and the Caribbean atmosphere translates well without being at all campy.  There's no faux palm huts to be found anywhere.  Instead, the walls are adorned with rich abstract art, and a portrait of Marley.   There's a lot of Jerk sauce on the menu, plenty of pasta, vegan-friendly dinners and desserts (provided by <a href="http://www.butterbugs.com/" title="Butterbugs">Butterbugs</a>).
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/05/img_0117.jpg">
+<a href="/blog/assets/img_0117.jpg">
   <img src="/blog/assets/img_0117.jpg" height="262" width="197"/>
 </a>
 
 Rebecca got the <em>Nigril Nights</em>, a tangy pasta dish with the finest rare tuna we've seen in a long time.  You could taste the freshness and the fantastic flavor of the fish.  I got <em>One Foundation</em> which included nicely grilled and sliced chicken over noodles with a creamy sauce.  It was augmented by pineapple and peppers.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/05/img_0120.jpg">
+<a href="/blog/assets/img_0120.jpg">
   <img src="/blog/assets/img_0120.jpg" height="234" width="176"/>
 </a>
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/05/img_0119.jpg">
+<a href="/blog/assets/img_0119.jpg">
   <img src="/blog/assets/img_0119.jpg" height="229" width="174"/>
 </a>
 

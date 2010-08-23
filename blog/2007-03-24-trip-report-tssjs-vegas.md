@@ -4,7 +4,7 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ business, community, events, jboss, opensource, traveling ]
 ---
-<a class="imagelink" title="tssjs_bob.jpg" href="http://www.fnokd.com/wp-content/uploads/2007/03/tssjs_bob.jpg">
+<a class="imagelink" title="tssjs_bob.jpg" href="/blog/assets/tssjs_bob.jpg">
   <img width="90" height="176" align="right" title="tssjs_bob.jpg" id="image213" alt="tssjs_bob.jpg" src="/blog/assets/tssjs_bob.jpg"/>
 </a>Just got back from Vegas, where I participated on a panel about opensource and business at <a title="TSSJS" href="http://javasymposium.techtarget.com/lasvegas/index.html">TheServerSide Java Symposium</a>.  It involved five of us from businesses that were related to opensource in some form.  It did not include Geir Magnusson, who apparently had better things to do.
 <ul>

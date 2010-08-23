@@ -8,7 +8,7 @@ Tomorrow is my first real status update call with my boss, <a title="Sacha's blo
 
 This morning, it all finally came together in a pleasing fashion, causing me to hoot and holler loud enough to scare the cats and probably some cows.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/picture-22.png">
+<a href="/blog/assets/picture-22.png">
   <img class="aligncenter size-full wp-image-485" title="Cows" src="/blog/assets/picture-22.png" alt="" width="229" height="134"/>
 </a>
 
@@ -20,7 +20,7 @@ But adding the deployer to your server's <code>deployers/</code> directory allow
 
 Live.  In-situ.  Edit your controllers or views as you like, and your changes are immediately reflected in the running instance.  Just like with <code>./script/server</code>.  It does not even have to redeploy your app.  The rails framework is handling the magic reloading.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/picture-21.png">
+<a href="/blog/assets/picture-21.png">
   <img class="aligncenter size-full wp-image-484" title="Hello World" src="/blog/assets/picture-21.png" alt="" width="237" height="55"/>
 </a>
 
@@ -32,7 +32,7 @@ The example application (<a title="ballast test application" href="http://github
 
 Once deployed, a Rails app looks like pretty much any other web-app.  The jboss.rails.deployment domain contains deployment objects for each rails app.  And jboss.web contains all the webby bits floating around.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/picture-20.png">
+<a href="/blog/assets/picture-20.png">
   <img class="aligncenter size-full wp-image-483" title="Deployment MBean" src="/blog/assets/picture-20.png" alt="" width="217" height="101"/>
 </a>I need to go  back and remove the dead-end code I've left in my wake, and update the tests I'd disabled while in a coding flury (bad Bob!)  I plan to put together an easy-to-consume plugin gem which contains an nicely-configured AS along with the jboss-rails deployer pre-installed, along with rake tasks to start/stop AS, and deploy your app.  I'd also like to give clustering a whirl, and see what we can do.
 

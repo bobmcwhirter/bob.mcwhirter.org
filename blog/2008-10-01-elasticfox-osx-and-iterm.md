@@ -12,7 +12,7 @@ So, a little AppleScript hacking, and Elasticfox now uses iTerm to connect to in
 
 Instead of jamming it all into a dozen <code>-e</code> options on <code>osascript</code>, I just put it in a file, and changed my configuration.
 
-<dl id="attachment_542" class="wp-caption aligncenter" style="width: 448px;"> <dt class="wp-caption-dt"><a href="http://www.fnokd.com/wp-content/uploads/2008/10/picture-26.png"><img class="size-full wp-image-542" title="Elasticfox configuration" src="/blog/assets/picture-26.png" alt="Elasticfox configuration" width="438" height="265"/></a></dt> </dl>
+<dl id="attachment_542" class="wp-caption aligncenter" style="width: 448px;"> <dt class="wp-caption-dt"><a href="/blog/assets/picture-26.png"><img class="size-full wp-image-542" title="Elasticfox configuration" src="/blog/assets/picture-26.png" alt="Elasticfox configuration" width="438" height="265"/></a></dt> </dl>
 
 And the script itself:
 

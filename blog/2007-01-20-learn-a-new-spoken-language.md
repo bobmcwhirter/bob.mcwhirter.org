@@ -4,7 +4,7 @@ author: 'Bob McWhirter'
 layout: blog
 tags: [ culture, north-carolina, polish ]
 ---
-<a title="polish.png" class="imagelink" href="http://www.fnokd.com/wp-content/uploads/2007/01/polish.png">
+<a title="polish.png" class="imagelink" href="/blog/assets/polish.png">
   <img width="136" height="174" align="left" alt="Pimsleur Polish" id="image128" title="Pimsleur Polish" src="/blog/assets/polish.png"/>
 </a>For a variety of reasons, I've come to the decision that I should learn how to speak Polish.  I know a crapload of computer languages, of course: Perl, Java, Ruby, Bash, Tcl, Logo.  But English is the only thing I can speak, even after 3 years of floudering in highschool French and a year of 8am university Latin courses.
 

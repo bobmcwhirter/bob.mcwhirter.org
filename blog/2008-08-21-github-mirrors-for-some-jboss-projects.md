@@ -12,7 +12,7 @@ In addition to the previously-mentioned JRuby mirror from Codehaus SVN to GitHub
 </ul>
 All are trunk-only mirrors, not picking up branches or tags.  Since the JBoss repository path has about 77,000 subversion revisions, and at one point held any and all JBoss software ever written, I have not mirrored it in its entirety.  Instead, I've only grabbed http://anonsvn.jboss.org/repos/jbossas/trunk back to revision 77,200.  It'll mirror going forward, but the github repository does not include any ancient history.
 
-For those of you playing along at home, the way to fetch just a cauterized "tip" from SVN to a git repository is to mirror <a title="Mirroring SVN to GitHub" href="http://www.fnokd.com/2008/08/20/mirroring-svn-repository-to-github/">as before</a>, but for the initial "git svn fetch" command, add a SVN-style revision range
+For those of you playing along at home, the way to fetch just a cauterized "tip" from SVN to a git repository is to mirror <a title="Mirroring SVN to GitHub" href="/blog/mirroring-svn-repository-to-github">as before</a>, but for the initial "git svn fetch" command, add a SVN-style revision range
 <blockquote>git svn fetch -r77200:HEAD</blockquote>
 For me, at least, trying to fetch the tip revision for the directory resulted in failure.  Going back a few revisions, and using a range that includes HEAD worked much better.  Then just push to GitHub has normal, and start your rebase/push cronjob.
 

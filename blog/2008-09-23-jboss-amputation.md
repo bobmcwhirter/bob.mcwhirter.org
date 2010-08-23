@@ -16,7 +16,7 @@ The <a title="jboss-as-rails" href="http://github.com/bobmcwhirter/jboss-as-rail
 
 Here's a picture to see how it'll all ultimately fit together.
 
-<a href="http://www.fnokd.com/wp-content/uploads/2008/09/jboss-rails-stuff-10kview.png">
+<a href="/blog/assets/jboss-rails-stuff-10kview.png">
   <img class="aligncenter size-full wp-image-512" title="jboss-rails-stuff-10kview" src="/blog/assets/jboss-rails-stuff-10kview.png" alt="" width="329" height="328"/>
 </a>
 

@@ -14,4 +14,4 @@ For Christmas, Noah got a Flywheels XPV.  It's a hunk of foam with 2 fans and a 
 
 As mentioned above, there's a blog.  <a href="http://flyingpants.org/2007/01/03/the-art-of-flying/">It's all explained there</a>.  So I hereby announce <a title="Flying Pants!" href="http://flyingpants.org/">FlyingPants.org</a>.
 
-And yes, it completely goes against my own point about <a title="Karma Columnist" href="http://www.fnokd.com/2006/12/15/karma-columnist/">syndicating columnists instead of running special-purpose blogs</a>.  I'm allowed to change my mind.
+And yes, it completely goes against my own point about <a title="Karma Columnist" href="/blog/karma-columnist">syndicating columnists instead of running special-purpose blogs</a>.  I'm allowed to change my mind.
