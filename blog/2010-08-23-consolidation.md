@@ -12,11 +12,13 @@ type, hard to spell, and doesn't really mean anything.
 So, in trying to shuffled everything over to *mcwhirter.org*, I've
 now got the Fnokd! site ported over to [Awestruct](http://awestruct.org/).
 
-I'm tired of differentiating *work* from *personal*.  So, now I'll be
-blogging whatever seems appropriate, at the appropriate locations.
+This includes some modifications to Awestruct to support cool stuff like
+[tag clouds](/blog/tags).  Pretty happy with how dynamic a static site can 
+be.  Mix in [IntenseDebate](http://intensedebate.com/) for comments, and
+a pile of static files works impressively well.
 
-For those of you keeping track at home, that includes this blog,
-along with
+For those of you keeping track at home, that means you can find stuff
+I write here and at a variety of other places:
 
 - <http://cloudpress.org/>
 - <http://torquebox.org/>
