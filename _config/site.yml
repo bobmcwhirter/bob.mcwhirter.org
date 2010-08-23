@@ -1,1 +1,9 @@
 intense_debate_acct: 7b1186245627382d2f94480fbc3a95d4
+
+profiles:
+  development:
+  production:
+    base_url: http://bob.mcwhirter.org/
+    deploy:
+      host: bob.mcwhirter.org
+      path: /home/bob/bob.mcwhirter.org

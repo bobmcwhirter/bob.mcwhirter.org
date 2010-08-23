@@ -84,8 +84,8 @@ class Importer
 
     content = content.gsub( /\n\n\n+/, "\n\n" )
 
-    #content = import_images( content )
-    #content = import_assets( content )
+    content = import_images( content )
+    content = import_assets( content )
 
     tags = item_xml.xpath( "category[@domain='tag' and @nicename]/@nicename" ).collect{|e|e.to_s}
 
