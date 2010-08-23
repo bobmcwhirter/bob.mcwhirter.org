@@ -1,0 +1,10 @@
+---
+layout: base
+title: Tags
+---
+
+.tag-cloud
+  - for tag in site.posts_tags
+    %span.tag{:class=>"tag-#{tag.group}"}
+      %a{:href=>tag.primary_page.url}
+        = tag.to_s
