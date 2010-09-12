@@ -132,7 +132,7 @@ will need to be somewhere.  Maybe you do have to fly to the office,
 or a client, or a conference every so often.  
 
 For me, that's a 90 minute drive and two airplanes, anytime I have
-to go somewhere.  It takes its toil.  It's a trade-off you do have
+to go somewhere.  It takes its toll.  It's a trade-off you do have
 to be willing to make.
 
 But at least you lose the 90 minutes of commute every day.
