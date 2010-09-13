@@ -14,7 +14,7 @@ earlier than my target wake time.  This gives me at least 1, 2 or
 embrace of sleep.
 
 Though, I'm amazed at how efficiently my sleep can adjust to a regular
-9 minute interruption, and blow right one past my target wake time.
+9 minute interruption, and blow right on past my target wake time.
 
 ![One alarm, 9 minute snooze, late!](/blog/assets/snooze9.png)
 

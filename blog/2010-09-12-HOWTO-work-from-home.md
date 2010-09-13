@@ -23,7 +23,7 @@ for technology positions.
 
 Some folks would consider that a down-side, though, since you're limiting
 your options. There's 1000 jobs out there, but you find 997 of them
-distateful beecause they require you to be in a certain place.  
+distasteful because they require you to be in a certain place.  
 
 If you're going to be that picky, you've got to make sure you can win one
 of those rare few jobs that allows you to work from your back patio.
