@@ -2,6 +2,7 @@
 layout: blog
 title: HOWTO work from home
 tags: [ work, career ]
+sequence: 1
 ---
 
 I've had a handful of discussions recently about working from home.
@@ -155,4 +156,5 @@ I joined Red Hat based on my experience with Drools and open-source in general.
 
 Now I *do* have the job where a company is "sponsoring" my open-source projects
 that I work on from my front porch, in a farm-town with 5 stop-lights.
+
 

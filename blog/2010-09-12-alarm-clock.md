@@ -2,6 +2,7 @@
 layout: blog
 title: Alarm Clock Strategy
 tags: [ sleep, wake, lifehack ]
+sequence: 0
 ---
 
 I'm not a morning person by default. Life claims otherwise, though, so 
@@ -38,3 +39,5 @@ since it's after the target time, but I'm not panicked since I'm not
 This is what I do to most successfully get up around 7am.
 
 ![iPhone settings](/blog/assets/iphone-alarms.jpg)
+
+
